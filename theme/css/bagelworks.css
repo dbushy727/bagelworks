@@ -17,3 +17,12 @@
 .menu .menu-details ul li span {
     width: 40px;
 }
+.menu-list-item {
+    color: black;
+}
+@media (max-width: 991px) {
+    
+    .showcase .showcase-item .coffee_image {
+        margin-bottom: 3em;
+    }
+}
