@@ -20,6 +20,18 @@
 .menu-list-item {
     color: black;
 }
+
+.contact_row {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #959595;
+}
+
+.raised_text {
+    text-shadow: 1px 1px 1px black;
+}
 @media (max-width: 991px) {
     
     .showcase .showcase-item .coffee_image {
