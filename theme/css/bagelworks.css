@@ -15,7 +15,8 @@
     height: 25em;
 }
 .menu .menu-details ul li span {
-    width: 40px;
+    width: auto;
+    padding: 0 3px;
 }
 .menu-list-item {
     color: black;
@@ -33,8 +34,13 @@
     text-shadow: 1px 1px 1px black;
 }
 @media (max-width: 991px) {
-    
+
     .showcase .showcase-item .coffee_image {
         margin-bottom: 3em;
     }
+}
+
+
+.grubhub-link img {
+    margin: 1em auto;
 }
