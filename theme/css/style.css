@@ -4,12 +4,12 @@ Designed by : http://responsivewebinc.com
 /*
  * Fonts
  */
- 
+
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 
-/* 
+/*
  * Basic CSS starts
  */
 
@@ -141,7 +141,7 @@ table { background: #fff; }
 /*
  * "border-zero" Class only for "Menu" Inner page
  */
- 
+
 .border-zero { border: 0 !important; padding: 0 !important; }
 
 /*
@@ -196,15 +196,15 @@ table { background: #fff; }
 	border-bottom-right-radius: 0;
 }
 
-.header .header-search form input::-webkit-input-placeholder { 
+.header .header-search form input::-webkit-input-placeholder {
 	color:#9e9e9e;
 }
 
-.header .header-search form input::-moz-placeholder { 
+.header .header-search form input::-moz-placeholder {
     color:#9e9e9e;
 }
 
-.header .header-search form input::-ms-input-placeholder { 
+.header .header-search form input::-ms-input-placeholder {
     color:#9e9e9e;
 }
 
@@ -226,7 +226,7 @@ table { background: #fff; }
 	border:1px solid #d8d8d8 !important;
 	border-left:0px !important;
 	color:#ccc !important;
-}	
+}
 
 /*
  * Logo
@@ -235,15 +235,15 @@ table { background: #fff; }
 .logo { margin-top: 20px; }
 
 .logo img {
-	display: inline-block; 
-	max-width: 50px;
+	display: inline-block;
+	width: 85%;
 }
 
 .logo h1 {
 	position: relative;
 	top: 5px;
 	left: 5px;
-	display: inline-block; 
+	display: inline-block;
 	margin: 0;
 	font-size: 40px;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -406,7 +406,7 @@ table { background: #fff; }
 	color: #9a9a9a;
 }
 
-.btn-cart-md .cart-dropdown { 
+.btn-cart-md .cart-dropdown {
 	position: absolute;
 	top: 55px;
 	right: 0;
@@ -444,7 +444,7 @@ table { background: #fff; }
 	border-width: 9px;
 }
 
-.btn-cart-md .cart-dropdown:after, 
+.btn-cart-md .cart-dropdown:after,
 .btn-cart-md .cart-dropdown:before { right: 46%; }
 .cart-dropdown .cart-item {
 	position: relative;
@@ -461,7 +461,7 @@ table { background: #fff; }
 	color: #ccc;
 }
 
-.cart-dropdown .cart-item a.btn { 
+.cart-dropdown .cart-item a.btn {
 	width: 100%;
 	color: #fff;
 }
@@ -542,7 +542,7 @@ table { background: #fff; }
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 24px;
-} 
+}
 
 /*
  * Default Heading
@@ -601,7 +601,7 @@ table { background: #fff; }
  * Dishes
  */
 
-.dishes .dishes-item-container { 
+.dishes .dishes-item-container {
 	max-width: 250px;
 	margin: 0 auto;
 	margin-top: 40px;
@@ -682,14 +682,14 @@ table { background: #fff; }
 /*
  * Offer price section, Pricing.
  */
- 
+
 .pricing { border-top: 1px solid #f1f1f1; }
 .pricing .pricing-item{
 	position: relative;
 	margin-top: 40px;
 	margin-bottom: 10px;
  }
- 
+
 .pricing .pricing-item img{
 	max-width: 250px;
 	float: left;
@@ -709,7 +709,7 @@ table { background: #fff; }
 }
 
 .pricing .pricing-item .pricing-item-details a.btn{ margin-top: 10px; }
-.pricing .pricing-item .pricing-item-details a.view-link{ 
+.pricing .pricing-item .pricing-item-details a.view-link{
 	display: inline-block;
 	margin-top: 7px;
 	font-size: 12px;
@@ -721,35 +721,46 @@ table { background: #fff; }
 	left: 0;
 	margin-top: -15px;
 	margin-left: -15px;
-	width: 55px;
-	height: 55px;
-	line-height: 55px;
+	width: 65px;
+	height: 65px;
+	line-height: 65px;
 	font-size: 23px;
 	font-weight: 700;
 	font-family: 'Open Sans Condensed', sans-serif;
 	border: 0;
 }
 
+.pricing .pricing-item .hot-tag.wide {
+	width: 85px;
+	height: 85px;
+	line-height: 85px;
+}
+
 /*
  * Menu Section
  */
- 
+
 .menu { border-top: 1px solid #f1f1f1; }
-.menu .menu-head{ position: relative; }
+.menu .menu-head{
+	position: relative;
+	margin: 30px 0 15px 0;
+	border-radius: 3px;
+	min-height: 15em;
+	background-size: cover;
+    background-position: 0px;
+}
 .menu h3 {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 100%;
-	display: inline-block;
-	margin-top: -45px;
 	padding: 5px 0;
-	font-size: 60px;
+	font-size: 50px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 700;
 	text-align: center;
 	color: #fff;
 	text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
 }
 
 .menu .menu-head .title-border{
@@ -804,7 +815,7 @@ table { background: #fff; }
 	border-radius: 30px;
 }
 
-.menu .menu-details ul li span{ 
+.menu .menu-details ul li span{
 	display: inline-block;
 	width: 30px;
 	font-weight: 700;
@@ -819,12 +830,12 @@ table { background: #fff; }
  */
 
 .chefs { border-top: 1px solid #f1f1f1; }
-.chefs .chefs-member{	
+.chefs .chefs-member{
 	max-width: 400px;
 	margin: 0 auto;
 	margin-top: 30px;
 	padding: 5px;
-	text-align: center; 
+	text-align: center;
 	background: #fff;
 	border: 1px solid #f2f2f2;
 	border-radius: 6px;
@@ -881,9 +892,9 @@ table { background: #fff; }
 /*
  * Showcase Section
  */
- 
+
 .showcase { padding-top: 80px; }
- 
+
 .showcase .showcase-item{
 	position: relative;
 	border: 1px solid #eaeaea;
@@ -899,7 +910,7 @@ table { background: #fff; }
 }
 
 .showcase .showcase-item h3, .showcase .showcase-item p { margin-left: 270px; padding-right: 20px;}
-.showcase .showcase-item h3{	
+.showcase .showcase-item h3{
 	padding-top: 10px;
 	font-size: 22px;
 }
@@ -931,15 +942,15 @@ table { background: #fff; }
 	float: left;
 }
 
-.testimonial .testimonial-item blockquote { 
-	position: relative; 
+.testimonial .testimonial-item blockquote {
+	position: relative;
 	margin-left: 100px;
 	padding: 0;
 	border: 0;
 }
-	
+
 .testimonial .testimonial-item blockquote p {
-	font-size: 22px; 
+	font-size: 22px;
 	line-height: 32px;
 	font-weight: 300;
 	color: #9a9a9a;
@@ -949,9 +960,9 @@ table { background: #fff; }
 .testimonial .testimonial-item h4 {
 	margin: 0;
 	margin-left: 100px;
-	font-size: 20px; 
+	font-size: 20px;
 }
-	
+
 .testimonial .testimonial-item h4 img {
 	display: inline-block;
 	margin-right: 10px;
@@ -968,7 +979,7 @@ table { background: #fff; }
 	margin-top: 25px;
 	background: transparent;
 	box-shadow: none;
-	border: 0; 
+	border: 0;
 }
 .testimonial .flexslider-recent .flex-control-nav,
 .testimonial .flexslider-testimonial .flex-control-nav{ left: 0; }
@@ -992,16 +1003,16 @@ table { background: #fff; }
 	text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 
-.testimonial .flexslider-recent li .slider-content p { 
+.testimonial .flexslider-recent li .slider-content p {
 	color: #fff;
-	text-shadow: 1px 1px 5px rgba(0,0,0,0.2);	
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 
 /*
  * Gallery with pretty photo
  */
 
-.gallery { border-top: 1px solid #f1f1f1; } 
+.gallery { border-top: 1px solid #f1f1f1; }
 
 .gallery-content .element {
 	position: relative;
@@ -1060,11 +1071,11 @@ table { background: #fff; }
 div.ppt { display:none !important; }
 
 /*
- * Inner pages CSS 
+ * Inner pages CSS
  */
 
 .banner {
-	background: url('../img/banner.jpg') center center repeat-x; 
+	background: url('../img/banner.jpg') center center repeat-x;
 	text-align: center;
 }
 
@@ -1088,15 +1099,15 @@ div.ppt { display:none !important; }
 
 .banner .breadcrumb li, .banner .breadcrumb li a,
 .banner .breadcrumb>li+li:before  { color: #fff; }
- 
+
 .inner-page .showcase { padding-bottom: 40px; }
 
 /*
  * About Us
  */
- 
+
  .inner-page .chefs{ border-top: 0; }
- 
+
 .about-company .about-company-item h3{
 	margin: 0;
 	margin-bottom: 8px;
@@ -1106,7 +1117,7 @@ div.ppt { display:none !important; }
 .about-company .about-company-item {
 	max-width: 600px;
 	margin: 0 auto;
-	margin-top: 30px; 
+	margin-top: 30px;
 }
 
 .about-company .about-company-item p{
@@ -1140,7 +1151,7 @@ div.ppt { display:none !important; }
 /*
  * Menu Page
  */
- 
+
 .inner-menu { padding: 40px 0; }
 .inner-menu .menu-list {
 	max-width: 400px;
@@ -1151,7 +1162,7 @@ div.ppt { display:none !important; }
 	border: 1px solid #eaeaea;
 	border-radius: 4px;
 }
- 
+
 .inner-menu .menu-list h3 {
 	margin: 0;
 	padding-bottom: 6px;
@@ -1164,7 +1175,7 @@ div.ppt { display:none !important; }
 .inner-menu .menu-list .menu-list-item {
 	margin-top: 15px;
 	padding-bottom: 10px;
-	border-bottom: 1px dashed #ddd; 
+	border-bottom: 1px dashed #ddd;
 }
 
 .inner-menu .menu-list .menu-list-item h4 {
@@ -1179,12 +1190,12 @@ div.ppt { display:none !important; }
 /*
  * Booking Page
  */
- 
+
 .inner-page .booking { margin-top: 40px; margin-bottom: 20px; }
 .inner-page .booking .carousel {
 	margin-top: 15px;
 	border-radius: 6px;
-	overflow: hidden; 
+	overflow: hidden;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .inner-page .booking .carousel .carousel-control {
@@ -1205,7 +1216,7 @@ div.ppt { display:none !important; }
 /*
  * Recipes Page
  */
- 
+
 .inner-page .recipe { margin-top: 40px; }
 .inner-page .recipe h4 {
 	margin-top: 0;
@@ -1233,13 +1244,13 @@ div.ppt { display:none !important; }
 }
 
 .inner-page .recipe .recipe-item  ul{
-	background: #fffbe5; 
+	background: #fffbe5;
 	border-radius: 2px;
-	border: 1px solid #ecdd94; 
+	border: 1px solid #ecdd94;
 }
 
 .inner-page .recipe .recipe-item  ul li{
-	padding: 10px 15px;	
+	padding: 10px 15px;
 	color: #888;
 	border-top: 1px dashed #ecdd94;
 }
@@ -1254,14 +1265,14 @@ div.ppt { display:none !important; }
 
 .inner-page .recipe .recipe-item .recipe-description {
 	padding: 10px 15px;
-	background: #fff; 
+	background: #fff;
 	border-radius: 2px;
-	border: 1px solid #eee; 
+	border: 1px solid #eee;
 }
 
 .inner-page .recipe .recipe-item .recipe-description p { margin-bottom: 0; }
 .inner-page .recipe .recipe-item .recipe-description h5 {
-	margin-top: 10px; 
+	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 13px;
 }
@@ -1273,9 +1284,9 @@ div.ppt { display:none !important; }
 /*
  * Shopping, On-line Order Page
  */
- 
+
 .inner-page .shopping { margin-top: 40px; margin-bottom: 20px; }
-.inner-page .shopping .shopping-item { 
+.inner-page .shopping .shopping-item {
 	position: relative;
 	max-width: 400px;
 	margin: 0 auto;
@@ -1295,13 +1306,13 @@ div.ppt { display:none !important; }
 .inner-page .shopping .shopping-item img{ border: 1px solid #f5f5f5; }
 .inner-page .shopping .shopping-item h4 {
 	margin-top: 15px;
-	margin-left: 10px; 
+	margin-left: 10px;
 	font-size: 16px;
 	line-height: 26px;
 }
 
 .inner-page .shopping .shopping-item span.item-price {
-	display: inline-block; 
+	display: inline-block;
 	margin-top: 15px;
 	margin-right: 10px;
 	font-size: 20px;
@@ -1314,10 +1325,10 @@ div.ppt { display:none !important; }
 	margin-left: 10px;
 	font-size: 13px;
 	text-align: left;
-	color: #9a9a9a; 
+	color: #9a9a9a;
 }
 
-.inner-page .shopping-item .item-hover { 
+.inner-page .shopping-item .item-hover {
 	position: absolute;
 	left: -150px;
 	bottom: 30%;
@@ -1341,7 +1352,7 @@ div.ppt { display:none !important; }
 	left: -130px;
 	bottom: 32%;
 	font-size: 16px;
-	color: #fff; 
+	color: #fff;
 	-webkit-transition: all 0.4s ease-in-out;
 	   -moz-transition: all 0.4s ease-in-out;
       	-ms-transition: all 0.4s ease-in-out;
@@ -1375,7 +1386,7 @@ div.ppt { display:none !important; }
 /*
  * Shopping, Single item Page
  */
- 
+
 .inner-page .single-item { margin-top: 40px; margin-bottom: 20px; }
 .inner-page .single-item h3 {
 	margin-top: 0;
@@ -1385,21 +1396,21 @@ div.ppt { display:none !important; }
 	border-bottom: 4px double #eee;
 }
 
-.inner-page .single-item p { 
+.inner-page .single-item p {
 	margin-bottom: 5px;
 	font-size: 13px;
-	color: #9a9a9a; 
+	color: #9a9a9a;
 }
 
 .inner-page .single-item  ul{
 	margin-top: 12px;
-	background: #fffbe5; 
+	background: #fffbe5;
 	border-radius: 2px;
-	border: 1px solid #ecdd94; 
+	border: 1px solid #ecdd94;
 }
 
 .inner-page .single-item  ul li{
-	padding: 10px 15px;	
+	padding: 10px 15px;
 	color: #888;
 	border-top: 1px dashed #ecdd94;
 }
@@ -1420,7 +1431,7 @@ div.ppt { display:none !important; }
 /*
  * Contact Us Page
  */
- 
+
 .inner-page .contactus { margin-top: 40px; margin-bottom: 40px; }
 .inner-page .contactus .contact-details { margin-bottom: 30px; }
 .inner-page .contactus .contact-details h4 {
@@ -1454,7 +1465,7 @@ div.ppt { display:none !important; }
 	color: #9a9a9a;
 }
 
-.inner-page .contactus .contact-form {	
+.inner-page .contactus .contact-form {
 	padding: 15px;
 	background: #fff;
 	border: 1px solid #eee;
@@ -1462,7 +1473,7 @@ div.ppt { display:none !important; }
 }
 
 .inner-page .contactus .contact-form h3{
-	margin-top: 0; 
+	margin-top: 0;
 	padding-bottom: 6px;
 	font-size: 20px;
 	border-bottom: 4px double #eee;
@@ -1485,7 +1496,7 @@ div.ppt { display:none !important; }
 /*
  * Checkout Page
  */
- 
+
 .inner-page .checkout { margin-top: 20px; margin-bottom: 20px; }
 .inner-page .checkout h4 {
 	margin-top: 0;
@@ -1525,7 +1536,7 @@ div.ppt { display:none !important; }
 /*
  * 404 Error Page
  */
- 
+
 .inner-page .error-content{
 	max-width: 600px;
 	margin: 80px auto;
@@ -1555,7 +1566,7 @@ div.ppt { display:none !important; }
 }
 
 /*
- * Blog page CSS 
+ * Blog page CSS
  */
 
 .inner-page .blog { margin-top: 40px; margin-bottom: 20px; }
@@ -1620,7 +1631,7 @@ div.ppt { display:none !important; }
 	margin-right: 3px;
 	font-size: 16px;
 }
-	
+
 .inner-page .blog .sidebar-widget ul li a { font-size: 13px;	line-height: 20px; }
 .inner-page .blog .sidebar-widget p { font-size: 13px; color: #9a9a9a; }
 .inner-page .blog .sidebar-widget .social { margin-top: 9px; }
@@ -1639,7 +1650,7 @@ div.ppt { display:none !important; }
 	margin-bottom: 10px;
 }
 
-/* 
+/*
  * Single Blog Page
  * Comments CSS
  */
@@ -1683,15 +1694,15 @@ div.ppt { display:none !important; }
 }
 
 /*
- * Gallery page CSS 
+ * Gallery page CSS
  */
 
 .inner-page .gallery { margin-top: 40px; border-top: 0; }
 
 /*
- * Nutrition page CSS 
+ * Nutrition page CSS
  */
- 
+
 .inner-page .nutrition {  margin-top: 40px; }
 .inner-page .nutrition .nutrition-item h4 {
 	margin-top: 0;
@@ -1707,12 +1718,12 @@ div.ppt { display:none !important; }
 .inner-page .nutrition .nutrition-item .table { margin-top: 15px; }
 
 /*
- * General page CSS 
+ * General page CSS
  */
 
 .inner-page .general { margin-top: 40px; }
-.inner-page .general .general-content { 
-	background: #fff; 
+.inner-page .general .general-content {
+	background: #fff;
 	border: 1px solid #eee;
 	border-radius: 5px;
 	overflow: hidden;
@@ -1720,7 +1731,7 @@ div.ppt { display:none !important; }
 
 .inner-page .general .nav-tabs{ border-bottom: 1px solid #eee; }
 .inner-page .general .nav-tabs>li>a {
-	margin-right: 0; 
+	margin-right: 0;
 	border-right: 1px solid #eee;
 }
 
@@ -1732,7 +1743,7 @@ div.ppt { display:none !important; }
 .inner-page .general .tab-content p {
 	margin-top: 10px;
 	font-size: 13px;
-	color: #9a9a9a; 
+	color: #9a9a9a;
 }
 
 .inner-page .general .tab-content ul{ margin: 0; }
@@ -1754,18 +1765,18 @@ div.ppt { display:none !important; }
 }
 
 /*
- * Components page CSS 
+ * Components page CSS
  */
 
 .inner-page .component { margin-top: 40px; }
 .inner-page .component-content {
-	margin-bottom: 30px; 
+	margin-bottom: 30px;
 	padding: 15px;
 	background: #fff;
 	border: 1px solid #eee;
 	border-radius: 5px;
 }
-	
+
 .inner-page .component-content h3{
 	margin-top: 0;
 	margin-bottom: 15px;
@@ -1774,8 +1785,8 @@ div.ppt { display:none !important; }
 	border-bottom: 4px double #eee;
 }
 
-.inner-page .component-content .tab-content{ 
-	padding: 10px 15px;  
+.inner-page .component-content .tab-content{
+	padding: 10px 15px;
 	border: 1px solid #ddd;
 	border-top: 0;
 }
@@ -1783,15 +1794,14 @@ div.ppt { display:none !important; }
 .component-content .dropdown-menu{ top: 40px }
 .component-content .dropdown-menu:after { left: 35px; }
 .component-content .dropdown-menu:before { margin-right: -3px; left: 35px; }
- 
+
 /*
  * Footer Section
  */
- 
+
 .footer { background: #fff; border-top: 1px solid #eaeaea; margin-top:20px;}
 .footer .footer-widget { margin-bottom: 40px;}
 .footer .footer-widget .logo{ margin-top: 0; margin-bottom: 10px; }
-.footer .footer-widget .logo img{ max-width: 40px; }
 .footer .footer-widget .logo h1{ top: 10px; font-size: 30px; }
 .footer .footer-widget h4 {
 	margin-top: 0;
@@ -1866,7 +1876,7 @@ div.ppt { display:none !important; }
 
 .footer .footer-copyright { padding-top: 40px; border-top: 1px solid #ddd; }
 .foot-error .footer-copyright { padding-top: 0; border-top: 0; }
- 
+
 .footer .footer-copyright p {
 	font-size: 13px;
 	color: #9a9a9a;
@@ -1902,7 +1912,7 @@ div.ppt { display:none !important; }
 	color: #eee;
 	text-decoration: none;
 }
- 
+
 /*
  * Responsive CSS
  * ---------------
@@ -1917,30 +1927,30 @@ div.ppt { display:none !important; }
 		line-height: 14px !important;
 		border-width: 3px !important;
 	}
-	
+
 	.tp-banner .tp-caption a.btn{
 		padding: 4px 6px;
 		font-size: 10px;
 	}
-	
+
 	.main-content{ max-width: 350px; margin: 0 auto; }
 	.testimonial .flexslider-recent p { display: none;}
-	
-	.about-company .about-company-inner span.company-feature { font-size: 15px !important; } 
+
+	.about-company .about-company-inner span.company-feature { font-size: 15px !important; }
 	.about-company .about-company-item .about-company-inner i{
 		width: 30px;
 		height: 30px;
 		line-height: 30px;
 		font-size: 13px;
 	}
-	
+
 	.inner-page .booking h3 { font-size: 25px; }
 	.inner-page .error-content{
 		margin-top: 30px;
 		margin-bottom: 30px;
-		padding: 10px; 
+		padding: 10px;
 	}
-	
+
 	.inner-page .error-content h3{ font-size: 90px; }
 	.inner-page .error-content h3 span{ top: -30px; }
 	.inner-page .checkout .sidebar-item h5 { margin-bottom: 5px; font-size: 18px;}
@@ -1949,13 +1959,13 @@ div.ppt { display:none !important; }
 /*
  * Tablets
  */
-@media (max-width: 767px){	
-	.header .logo { 
+@media (max-width: 767px){
+	.header .logo {
 		max-width: 260px;
 		margin: 0 auto;
 		margin-top: 20px;
 	}
-	
+
 	.header .logo h1 { font-size: 35px; }
 	.header .logo p { font-size: 13px; }
 	.header .navbar-default .navbar-nav { margin-top: 8px; }
@@ -1966,59 +1976,59 @@ div.ppt { display:none !important; }
 		font-size: 18px;
 		text-align: left;
 	}
-	
+
 	.header .navbar-default .navbar-nav>li>a img { display: none; }
 	.header .navbar-collapse { border-top: 1px solid #f1f1f1; }
 	.header .navbar-default .navbar-nav .open .dropdown-menu>li>a {
 		margin-left: 20px;
 		padding-left: 8px;
-	}	
-	
+	}
+
 	.header .navbar-default  .navbar-nav > .dropdown .dropdown-menu{
-		margin-top: 0px; 
-		border-top: 0px !important;	
-	}	
-	
+		margin-top: 0px;
+		border-top: 0px !important;
+	}
+
 	.header .navbar-default  .navbar-nav > .dropdown .dropdown-menu:after,
 	.header .navbar-default  .navbar-nav > .dropdown .dropdown-menu:before { border: 0px; }
 	.header .navbar-default .navbar-nav>li>a:hover,
 	.header .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover { background: #f5f5f5; }
-	
-	.header .header-contact span { 
+
+	.header .header-contact span {
 		display: block;
 		margin-top: 5px;
 		margin-bottom: 15px;
-		text-align: center; 
+		text-align: center;
 	}
-	
-	
+
+
 	.tp-banner .tp-caption span.price-tag{
 		width: 70px;
 		height: 70px;
 		font-size: 20px;
 		line-height: 21px;
 	}
-	
-	.btn-cart-md { 
+
+	.btn-cart-md {
 		float: none;
 		max-width: 150px;
 		margin: 0 auto;
 		margin-top: 20px;
 	}
-	
+
 	.btn-cart-md .cart-dropdown { right: 50%; margin-right: -125px; }
 	.dishes .dishes-item-container {
 		max-width: 400px;
 		margin: 0 auto;
 		margin-top: 40px;
 	}
-	
+
 	.pricing .pricing-item{
 		max-width: 400px;
 		margin: 0 auto;
 		margin-top: 40px;
 	}
-	
+
 	.menu .menu-container{ max-width: 400px; margin: 0 auto; }
 	.chefs .chefs-member{ margin-bottom: 40px; }
 	.showcase .showcase-item{
@@ -2026,14 +2036,14 @@ div.ppt { display:none !important; }
 		margin: 0 auto;
 		margin-top: 40px;
 	}
-	
-	
+
+
 	.testimonial .flexslider-testimonial,
 	.testimonial .flexslider-recent { max-width: 400px !important; }
-	
-	.gallery .gallery-content{ max-width: 400px; margin: 0 auto;	}	
+
+	.gallery .gallery-content{ max-width: 400px; margin: 0 auto;	}
 	.about-company .about-company-item { max-width: 400px; }
-	.about-company .about-company-inner span.company-feature { font-size: 20px; } 
+	.about-company .about-company-inner span.company-feature { font-size: 20px; }
 	.inner-page .booking{ max-width: 400px; margin: 0 auto; }
 	.inner-page .recipe{ max-width: 400px; margin: 0 auto; }
 	.inner-page .shopping { margin-bottom: 0px; }
@@ -2046,12 +2056,12 @@ div.ppt { display:none !important; }
 	.inner-page .blog { margin-bottom: 0;}
 	.inner-page .blog .blog-post,
 	.inner-page .blog .blog-sidebar { max-width: 400px; margin: 0 auto; }
-	.inner-page .blog .blog-post .entry .blog-img{ 
+	.inner-page .blog .blog-post .entry .blog-img{
 		float: none !important;
 		max-width: 300px;
-		margin-bottom: 25px; 
+		margin-bottom: 25px;
 	}
-	
+
 	.inner-page .blog .blog-post .entry h3,
 	.inner-page .blog .blog-post .entry hr,
 	.inner-page .blog .blog-post .entry .meta,
@@ -2059,19 +2069,19 @@ div.ppt { display:none !important; }
 	.inner-page .respond,
 	.inner-page .navigation {
 		max-width: 400px;
-		margin: 0 auto; 
+		margin: 0 auto;
 	}
-	
+
 	.inner-page .navigation { margin-top: 20px; }
 	.inner-page .nutrition { margin-top: 20px; }
 	.inner-page .nutrition-item .table-responsive { margin-top:15px; }
 	.inner-page .nutrition .nutrition-item .table { margin-top: 0; }
-	.inner-page .nutrition .nutrition-item { 
+	.inner-page .nutrition .nutrition-item {
 		max-width: 400px;
 		margin: 0 auto;
 		margin-bottom: 40px;
 	}
-	
+
 	.inner-page .general { margin-top: 0; }
 	.inner-page .general .general-content { max-width: 400px; margin: 0 auto; }
 	.inner-page .general .nav-tabs{ border-bottom: 0; }
@@ -2082,11 +2092,11 @@ div.ppt { display:none !important; }
 		margin: 0 auto;
 		margin-top: 30px;
 	}
-	
+
 	/*
 	 * footer
 	 */
-	
+
 	.footer .footer-widget{
 		max-width: 400px;
 		margin: 0 auto;
@@ -2108,8 +2118,8 @@ div.ppt { display:none !important; }
 	}
 	.testimonial .flexslider-testimonial { margin-bottom: 50px; }
 	.testimonial .flexslider-recent  { margin-bottom: 80px; }
-	
-	
+
+
 	.pricing .pricing-item img{
 		max-width: 100%;
 		float: none;
@@ -2120,12 +2130,12 @@ div.ppt { display:none !important; }
 		margin-top: 15px;
 		text-align: center;
 	}
-	
+
 	.pricing .pricing-item .pricing-item-details a.view-link{ margin-right: 7px; }
 	.pricing .pricing-item .pricing-item-details a.btn{
 		float: none !important;
 	}
-	
+
 	.showcase .showcase-item { padding: 20px; }
 	.showcase .showcase-item img {
 		position: relative;
@@ -2138,10 +2148,10 @@ div.ppt { display:none !important; }
 		top: -13px;
 		margin: 0;
 	}
-	
+
 	.showcase .showcase-item h3{ margin-bottom: 10px; padding: 0; text-align: center; }
 	.showcase .showcase-item p { padding: 0; text-align: center; }
-	
+
 	.inner-page .booking .booking-form { margin-top: 40px; }
 	.inner-page .recipe .recipe-content{ padding-bottom: 15px; }
 	.inner-page .recipe .recipe-item{ margin-bottom: 15px; }
